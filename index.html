@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webdesign</title>
-    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
         <!-- Header -->
         <header>
             <div class="header-container">
-                <div class="logo">
+                <div class="logo" id="logo">
                     <img src="img/logo.png" alt="logo">
                 </div>
                 <input type="checkbox" id="menu-checkbox">
                 <nav role="navigation"> <!-- Аттрибут 'role' позволяет наиболее четко указать синтаксическое предназначение какого-либо элемента при взаимодействии с пользователем сайта -->
-                    <label for="menu-checkbox" class="toggle-button" data-open="Menu" data-close="Close" onclick></label>
+                    <label for="menu-checkbox" class="toggle-button" data-open="MENU" data-close="&#9587" onclick id="toggle"></label>
                     <ul class="main-menu">
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">PORTFOLIO</a></li>

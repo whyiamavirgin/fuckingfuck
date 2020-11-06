@@ -7,6 +7,10 @@ body {
     font-family: 'Century Gotic';
 }
 
+.invisible {
+    display: none;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -27,7 +31,7 @@ header {
 }
 
 .header-container {
-    width: 1400px;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between; /* Чтобы расположить объекты по разным сторонам */
@@ -55,4 +59,51 @@ ul {
 
 nav {
     margin-top: 20px;
+}
+
+@media screen and (max-width: 420px) {
+    .header-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-menu {
+        display: none;
+    }
+    .main-menu li {
+        width: 100%;
+        display: block;
+        font-size: 12px;
+    }
+    .main-menu a {
+        display: block;
+        padding: 8px;
+    }
+    .toggle-button {
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        color: #000000;
+    }
+    .toggle-button:after {
+        content: attr(data-open);
+        margin-top: 45%;
+        display: flex;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu {
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+        content: attr(data-close);
+        margin-top: 0;
+        margin-left: 170%;
+    } 
+    .header-container a{
+        margin-right: -65px;
+    }
+    .main-menu {
+        position: relative;
+        top: 20px;
+        right: 70px;
+    }
 }
