@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Century Gotic';
+    src: url(fonts/gotic.ttf);
+}
+
+body {
+    font-family: 'Century Gotic';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: #f6f6f6;
+    padding: 22px 0;
+}
+
+.header-container {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Чтобы расположить объекты по разным сторонам */
+}
+
+.header-container a {
+    color: #000000;
+    margin-right: 63px;
+    font-size: 16px;
+    padding: 27px 6px;
+}
+
+.header-container a:hover {
+    transition: all.7s ease;
+    background: #ffea00;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+ul {
+    display: flex;
+}
+
+nav {
+    margin-top: 20px;
+}
