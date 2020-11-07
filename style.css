@@ -61,6 +61,79 @@ nav {
     margin-top: 20px;
 }
 
+/* First block */
+
+.top-slide {
+    background: url(img/slider_bg.jpg) no-repeat;
+    padding-top: 120px;
+    padding-bottom: 280px;
+}
+
+.top-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.top-slide h2 {
+    background: #ffea00;
+    display: inline; /* Попробуй поменять, если забыл для чего это */
+    font-size: 70px;
+    padding: 0 13px;
+}
+
+.top-slide :nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.top-slide p {
+    background: #414146;
+    display: inline; /* Попробуй поменять, если забыл для чего это */
+    padding: 0 4px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* Second block */
+
+.specialize-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.specialize-container h3 {
+    margin-top: 60px;
+    font-size: 35px;
+}
+
+.specialize-container p {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.first-p {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.bottom-card {
+    background: #414146;
+    position: relative;
+    top: -25px;
+}
+
+.specialize-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-card img{
+    width: 250px;
+    height: 200px;
+}
+
+
 @media screen and (max-width: 420px) {
     .header-container {
         width: 100%;
