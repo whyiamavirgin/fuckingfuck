@@ -86,7 +86,7 @@ $(function() {
 
 
 var abc = document.getElementById('footer-navig');
-if($(window).width() < 420) {
+if($(window).width() <= 420) {
     abc.className += " disabled";
 } else {
     abc.className = "footer-nav";
